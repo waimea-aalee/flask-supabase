@@ -1,0 +1,34 @@
+{% extends 'pages/base.jinja' %}
+
+{% block title %}
+    Flask And Supabase
+{% endblock %}
+
+{%  block content %}
+
+    <section id="hero"
+        <h1>Flask and Supabase Demo</h1>
+    </section>
+
+    <section id="things">
+    
+       {% for thing in things %}
+
+            <article>
+
+                <header>
+                    {{ thing["name"] }}
+                </header>
+            
+                Cost ${{ thing["cost"] }}
+            
+                <footer>
+                    Delete
+                </footer>
+            
+            </article> 
+
+       {% endfor %}
+
+    </section>
+{% endblock %}
