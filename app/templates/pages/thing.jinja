@@ -1,0 +1,31 @@
+{% extends 'pages/base.jinja' %}
+
+{% block title %}
+    Flask And Supabase - Single Thing
+{% endblock %}
+
+{%  block content %}
+
+    <section id="thing">
+    
+            <article>
+
+                <header>
+                    <h4>{{ thing["name"] }}</h4>
+                </header>
+
+                <p>{{ thing["description"] }}</p>
+            
+                <p>Cost ${{ thing["cost"] }}</p>
+
+                <p>Rating {{  thing["rating"] }}/5</p>
+            
+                <footer>
+                    <a href="#">Delete</a>
+                </footer>
+            
+            </article> 
+
+
+    </section>
+{% endblock %}
