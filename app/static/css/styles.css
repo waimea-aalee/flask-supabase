@@ -20,6 +20,21 @@
     padding: 2rem;
 }
 
-#things article {
+#things article header {
     background-color: var(--pico-primary-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#things article paragraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
